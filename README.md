@@ -24,6 +24,7 @@ Execute the program using runserver command.
 
 # PROGRAM
 ```
+{% load static %}
 <html>
     <head>
         <title>
@@ -38,7 +39,7 @@ Execute the program using runserver command.
       </style>
     </head>
     <body> 
-        <img src="sec-logo-01as-2048x412.png", height="23%", width="100%">
+        <img src="{% static 'sec_logo.png' %}", height="23%", width="100%">
          <h1 > SLOT TIME TABLE  - TEJA DP 25018004 </h1>
         <table class="table1">
         <tr style="background-color: darkseagreen;" >
@@ -109,8 +110,7 @@ Execute the program using runserver command.
      </html>
 ```
 # OUTPUT
-![alt text](<Screenshot (39).png>)
-![alt text](<Screenshot (40).png>)
+![alt text](<Screenshot (41).png>)
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
