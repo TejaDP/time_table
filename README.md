@@ -24,6 +24,23 @@ Execute the program using runserver command.
 
 # PROGRAM
 ```
+urls.py
+from django.contrib import admin
+from django.urls import path
+from app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.time_table,name="time"),
+]
+
+views.py
+from django.shortcuts import render
+def time_table(request):
+    return render(request,"time.html")
+
+templates
+time.html
 {% load static %}
 <html>
     <head>
